@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "CompanyBillingAddress": {
+                    "type": "string"
+                },
+                "CompanyBillingAddressCity": {
+                    "type": "string"
+                },
+                "CompanyBillingAddressCountryCode": {
+                    "type": "string"
+                },
+                "CompanyBillingAddressLine": {
+                    "type": "string"
+                },
+                "CompanyBillingAddressPostCode": {
+                    "type": "string"
+                },
+                "CompanyBillingAddressState": {
+                    "type": "string"
+                },
+                "CompanyIDFK": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "CompanyName": {
+                    "type": "string"
+                },
+                "ContactEmail": {
+                    "type": "string"
+                },
+                "CurrencyCode": {
+                    "type": "string"
+                },
+                "Firstname": {
+                    "type": "string"
+                },
+                "Lastname": {
+                    "type": "string"
+                },
+                "Mobile": {
+                    "type": "string"
+                },
+                "Phone": {
+                    "type": "string"
+                },
+                "PositionTitle": {
+                    "type": "string"
+                },
+                "UpdateExisting": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "ContactEmail",
+                "Firstname",
+                "Lastname"
+            ],
+            "type": "object"
+        }
+    }
+}

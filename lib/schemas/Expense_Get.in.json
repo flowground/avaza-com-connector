@@ -1,0 +1,60 @@
+{
+    "type": "object",
+    "properties": {
+        "UpdatedAfter": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "ExpenseDateFrom": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "ExpenseDateTo": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "UserEmail": {
+            "required": false,
+            "type": "string"
+        },
+        "CategoryName": {
+            "required": false,
+            "type": "string"
+        },
+        "CustomerID": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "ProjectID": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "isChargeable": {
+            "required": false,
+            "type": "boolean"
+        },
+        "isInvoiced": {
+            "required": false,
+            "type": "boolean"
+        },
+        "pageSize": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "pageNumber": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "Sort": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

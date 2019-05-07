@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "UpdatedAfter": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "pageSize": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "pageNumber": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        }
+    }
+}

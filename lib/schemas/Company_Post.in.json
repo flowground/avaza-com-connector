@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "BillingAddress": {
+                    "type": "string"
+                },
+                "BillingAddressCity": {
+                    "type": "string"
+                },
+                "BillingAddressLine": {
+                    "type": "string"
+                },
+                "BillingAddressPostCode": {
+                    "type": "string"
+                },
+                "BillingAddressState": {
+                    "type": "string"
+                },
+                "BillingCountryCode": {
+                    "type": "string"
+                },
+                "Comments": {
+                    "type": "string"
+                },
+                "CompanyName": {
+                    "type": "string"
+                },
+                "CurrencyCode": {
+                    "type": "string"
+                },
+                "Fax": {
+                    "type": "string"
+                },
+                "Phone": {
+                    "type": "string"
+                },
+                "TaxNumber": {
+                    "type": "string"
+                },
+                "website": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "CompanyName"
+            ],
+            "type": "object"
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "BudgetAmount": {
+                    "format": "double",
+                    "type": "number"
+                },
+                "BudgetHours": {
+                    "format": "double",
+                    "type": "number"
+                },
+                "CompanyIDFK": {
+                    "description": "An ID of a company in Avaza to create the Project under. You must provide either a CompanyID, or a CompanyName",
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "CompanyName": {
+                    "description": "The name for a Company to create the project under. Will create company unless it matches an existing company name",
+                    "type": "string"
+                },
+                "CurrencyCode": {
+                    "description": "The ISO 3 letter currency code to use when creating a new Company. If not provided, the account's default currency will be used.",
+                    "type": "string"
+                },
+                "EndDate": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "PopulateDefaultProjectMembers": {
+                    "type": "boolean"
+                },
+                "ProjectCategoryIDFK": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "ProjectNotes": {
+                    "description": "Any descriptive notes about the project. (2000 characters max)",
+                    "type": "string"
+                },
+                "ProjectStatusCode": {
+                    "type": "string"
+                },
+                "ProjectTitle": {
+                    "description": "The title of the new project. (255 characters max)",
+                    "type": "string"
+                },
+                "StartDate": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "TimesheetApprovalRequiredbyDefault": {
+                    "type": "boolean"
+                },
+                "isTaskRequiredOnTimesheet": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "ProjectTitle"
+            ],
+            "type": "object"
+        }
+    }
+}

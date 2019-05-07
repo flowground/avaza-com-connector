@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "EndDateUTC": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "ProjectIDFK": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "StartDateUTC": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "Title": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

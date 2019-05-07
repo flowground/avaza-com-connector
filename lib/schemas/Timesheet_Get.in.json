@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "UpdatedAfter": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "EntryDateFrom": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "EntryDateTo": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "UserID": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "UserEmail": {
+            "required": false,
+            "type": "string"
+        },
+        "CategoryName": {
+            "required": false,
+            "type": "string"
+        },
+        "ProjectID": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "isBillable": {
+            "required": false,
+            "type": "boolean"
+        },
+        "isInvoiced": {
+            "required": false,
+            "type": "boolean"
+        },
+        "isTimerRunning": {
+            "required": false,
+            "type": "boolean"
+        },
+        "pageSize": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "pageNumber": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "Sort": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

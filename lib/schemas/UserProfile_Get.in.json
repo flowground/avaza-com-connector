@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "Roles": {
+            "required": false,
+            "type": "string"
+        },
+        "CurrentUserOnly": {
+            "required": false,
+            "type": "boolean"
+        },
+        "CompanyIDFK": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        }
+    }
+}

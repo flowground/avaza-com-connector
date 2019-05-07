@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "ProjectID": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        }
+    }
+}

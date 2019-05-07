@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+        },
+        "UserID": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        }
+    }
+}

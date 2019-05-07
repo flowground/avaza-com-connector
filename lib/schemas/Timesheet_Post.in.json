@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "Duration": {
+                    "description": "The duration of the timesheet, in decimal hours. If null or 0, a timer will be started.",
+                    "format": "double",
+                    "type": "number"
+                },
+                "EntryDate": {
+                    "description": "The date of the timesheet entry, with an optional start time component.",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "Notes": {
+                    "description": "Timesheet Notes",
+                    "type": "string"
+                },
+                "ProjectIDFK": {
+                    "description": "The project to associate the timesheet with.",
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "TaskIDFK": {
+                    "description": "Optional. Link the timesheet to a specific task",
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "TimesheetCategoryIDFK": {
+                    "description": "The Project timesheet category to link the timesheet to",
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "UserIDFK": {
+                    "description": "UserID for a Timesheet user in Avaza",
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "hasStartEndTime": {
+                    "description": "If true, the start time will be take from the time component of the Entry Date field, and the end time will be calculated by adding the Duration to the StartDate",
+                    "type": "boolean"
+                },
+                "isInvoiced": {
+                    "description": "Optional. False by default. Allows you to mark the timesheet as invoiced in an external system.",
+                    "type": "boolean"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

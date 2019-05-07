@@ -1,0 +1,59 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "AssignedToUserIDFK": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "DateDue": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "DateDueUTC": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "DateStart": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "DateStartUTC": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string"
+                },
+                "EstimatedEffort": {
+                    "description": "Decimal hours",
+                    "format": "double",
+                    "type": "number"
+                },
+                "FieldsToUpdate": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "PercentComplete": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "TaskID": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "Title": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "TaskID",
+                "FieldsToUpdate"
+            ],
+            "type": "object"
+        }
+    }
+}

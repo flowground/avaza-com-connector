@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "Duration": {
+                    "format": "double",
+                    "type": "number"
+                },
+                "EntryDate": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "FieldsToUpdate": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "Notes": {
+                    "type": "string"
+                },
+                "ProjectIDFK": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "TaskIDFK": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "TimeSheetCategoryIDFK": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "TimeSheetEntryID": {
+                    "format": "int64",
+                    "type": "integer"
+                },
+                "hasStartEndTime": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "TimeSheetEntryID",
+                "FieldsToUpdate",
+                "ProjectIDFK"
+            ],
+            "type": "object"
+        }
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "Amount": {
+                    "format": "double",
+                    "type": "number"
+                },
+                "CustomerIDFK": {
+                    "description": "Only required if no invoice allocations specified.",
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "DateIssued": {
+                    "description": "Date of Payment. If not specified, assumes today.",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "ExchangeRate": {
+                    "description": "Optional. Only used when the Customer's currecy is different from the Avaza account's base currency. Specifies the exchange rate that should apply between the customer currency and base currency. If not provided we will obtain an up to date exchange rate for the Payment Issue Date.",
+                    "format": "double",
+                    "type": "number"
+                },
+                "Notes": {
+                    "type": "string"
+                },
+                "PaymentAllocations": {
+                    "description": "List of amounts within this payment that are allocated to invoices. The sum of these be less than or equal to the payment amount.",
+                    "items": {
+                        "properties": {
+                            "AllocationAmount": {
+                                "description": "The Amount being allocated to the invoice. Expects same currency as invoice currency",
+                                "format": "double",
+                                "type": "number"
+                            },
+                            "AllocationDate": {
+                                "description": "Optional. Defaults to the current time in the Avaza account's timezone. The date the allocation is applied to the invoice. Can be difference from the Payment Date when doing prepayments etc.",
+                                "format": "date-time",
+                                "type": "string"
+                            },
+                            "InvoiceTransactionIDFK": {
+                                "description": "The Avaza Invoice TransactionID that is having a payment amount allocated to it.",
+                                "format": "int64",
+                                "type": "integer"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "PaymentNumber": {
+                    "description": "Optional. If not specified will be automatically generated",
+                    "type": "string"
+                },
+                "PaymentProviderCode": {
+                    "description": "Optional for storing the payment provider who was the source of funds.",
+                    "type": "string"
+                },
+                "TransactionPrefix": {
+                    "description": "Optional to override the default prefix added to Payment Numbers",
+                    "type": "string"
+                },
+                "TransactionReference": {
+                    "description": "Optional for storing the reference # of the payment method.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}
